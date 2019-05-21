@@ -8,9 +8,6 @@ env:
 services:
   - docker
 
-script:
-  # other script steps might be done before running the actual analysis
-  - sonar-scanner
 
 after_success:
   - pip install --user awscli
